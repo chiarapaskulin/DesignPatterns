@@ -1,13 +1,6 @@
 import java.util.Scanner;
 
 public class Fachada {
-    //cria carrinho
-    //vê os produtos
-    //adiciona produto
-    //mostra itens carrinho
-    //escolhe metodo pagamento
-    //mostra Nota Fiscal e encerra
-
     Produtos_FakeBD produtos;
     Cliente_Subject cliente;
     Scanner scanner;

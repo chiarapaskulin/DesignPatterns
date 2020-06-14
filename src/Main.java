@@ -2,13 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String args[]){
-        //cria carrinho
-        //vê os produtos
-        //adiciona produto
-        //finaliza compra
-        //escolhe metodo pagamento
-        //dá informações
-        //encerra
         Scanner scanner = new Scanner(System.in);
 
         Fachada fachada = new Fachada();
