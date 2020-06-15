@@ -28,6 +28,10 @@ public class Main {
             System.out.println("\nDeseja adicionar mais produtos? 1-Sim 2-Não");
             String resposta = scanner.nextLine();
             if(resposta.equals("2")) maisProdutos = false;
+
+            System.out.println("\nDeseja ver os itens do seu carrinho? 1-Sim 2-Não");
+            resposta = scanner.nextLine();
+            if(resposta.equals("1")) System.out.println("\n"+fachada.listaItensCarrinho());
         }
 
         String nf = fachada.pagamento();
