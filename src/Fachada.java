@@ -28,7 +28,7 @@ public class Fachada {
     public String listaItensCarrinho(){
         double valorTotal = cliente.valorTotalCarrinho();
         String ret = "Itens do carrinho: \n";
-        ret += cliente.listProdutosCarrinho() + "\n";
+        ret += cliente.listProdutosCarrinho();
         ret += "Valor total: R$" + valorTotal;
         return ret;
     }
@@ -40,7 +40,7 @@ public class Fachada {
         int opcao = 0;
 
         while(!valido) {
-            System.out.println("Escolha seu método de pagamento:");
+            System.out.println("\nEscolha seu método de pagamento:");
             System.out.println("1 - Cartão de Débito");
             System.out.println("2 - Cartão de Crédito");
             System.out.println("3 - Boleto Bancário");
@@ -68,7 +68,7 @@ public class Fachada {
     private String mostraNotaFiscal(int metodoPagamento, double valorTotal){
         String ret = "-------NOTA FISCAL------- \n";
         ret += "Itens: " + "\n";
-        ret += cliente.listProdutosCarrinho() + "\n";
+        ret += cliente.listProdutosCarrinho();
         ret += "Valor total: " + valorTotal + "\n";
 
         switch(metodoPagamento){
@@ -84,6 +84,7 @@ public class Fachada {
             case 4:
                 ret += "Pagamento efetuado com PayPal.";
         }
+        ret += "\n-------------------------";
         return ret;
     }
 
