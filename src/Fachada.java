@@ -74,10 +74,13 @@ public class Fachada {
         switch(metodoPagamento){
             case 1:
                 ret += "Pagamento efetuado com Cartão de Débito.";
+                break;
             case 2:
                 ret += "Pagamento efetuado com Cartão de Crédito.";
+                break;
             case 3:
                 ret += "Pagamento efetuado com Boleto Bancário.";
+                break;
             case 4:
                 ret += "Pagamento efetuado com PayPal.";
         }
