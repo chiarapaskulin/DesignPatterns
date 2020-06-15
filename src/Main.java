@@ -33,5 +33,7 @@ public class Main {
         String nf = fachada.pagamento();
 
         System.out.println(nf);
+
+        fachada.encerraCompra();
     }
 }
